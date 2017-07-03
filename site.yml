@@ -1,5 +1,5 @@
 ---
 - hosts: zabbix
   roles:
-    - { role: "/etc/ansible/roles/zabbix_centos7_ansible" }
+    - { role: "zabbix_centos7_ansible" }
 
