@@ -1,19 +1,19 @@
-Ansible Role: Zabbix-server
+#Ansible Role: Zabbix-server
 
 Installs zabbix-server and agent for RedHat/CentOS(6) and Ubuntu linux server.
 
-Requirements
+##Requirements
 
 
 Firewall should be disabled on your server
 Command : systemctl stop firewalld
 
-Role Variables
+##Role Variables
 
 Available variables are listed below, along with default values:
  
  
-# The defaults provided by this role are specific to each distribution
+##The defaults provided by this role are specific to each distribution
    mysql_root_password: "root@123"
    zabbix_db_password: "password"
    zabbix_server_ip: "192.168.33.52"
@@ -22,11 +22,11 @@ Available variables are listed below, along with default values:
 
 Set these defaults according to your infrastructure.
 
-Dependencies
+##Dependencies
 
 None.
 
-Example Playbook (installs zabbix-server version 3.0 and above)
+##Example Playbook (installs zabbix-server version 3.0 and above)
  
  
 - hosts: zabbix
@@ -38,7 +38,7 @@ Example Playbook (installs zabbix-server version 3.0 and above)
  
  
  
-Example Playbook (install zabbix-server and agent)
+##Example Playbook (install zabbix-server and agent)
 
 For RHEL / CentOS:
  
