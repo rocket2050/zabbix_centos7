@@ -1,5 +1,5 @@
 ---
-- hosts: zabbix
+- hosts: "{{host}}"
   roles:
-    - { role: "zabbix_centos7_ansible" }
+    - { role: "zabbix_centos7" }
 
